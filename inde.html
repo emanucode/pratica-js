@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practica JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap con npm y HTML nativo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
   </head>
   <body>
-    <section class="container"></section>
+    <div class="container mt-4">
+      <h1 class="text-primary">Hola Bootstrap</h1>
+      <button class="btn btn-success" id="btn">Click me</button>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("btn").addEventListener("click", () => {
+        alert("¡Botón clickeado!");
+      });
+    </script>
   </body>
 </html>
